@@ -1,0 +1,17 @@
+{
+    "Post": {
+        "Test_Scenario": "Verify post functionality",
+        "Test_Cases": [
+            {
+                "Test_Id": "post#1",
+                "Description": "Verify post with vaild credentials",
+                "Pre_Condition": "Login Required",
+                "Test_Data": {
+                    "Post_Message": "Test Message"
+                },
+                "Expected_Output": "Successfull Register",
+                "Test_Type": "positive"
+            }
+        ]
+    }
+}

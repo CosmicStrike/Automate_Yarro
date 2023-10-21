@@ -1,0 +1,20 @@
+{
+    "SignUp": {
+        "Test_Scenario": "Verify Register functionality",
+        "Test_Cases": [
+            {
+                "Test_Id": "register#1",
+                "Description": "Verify register with vaild credentials",
+                "Pre_Condition": "No register Required",
+                "Test_Data": {
+                    "username": "Ecom",
+                    "password": "Ecom@1234",
+                    "repassword": "Ecom@1234",
+                    "email": "ecom.app.services@gmail.com"
+                },
+                "Expected_Output": "Successfull Register",
+                "Test_Type": "positive"
+            }
+        ]
+    }
+}

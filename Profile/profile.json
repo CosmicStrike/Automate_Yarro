@@ -1,0 +1,31 @@
+{
+    "Profile": {
+        "Test_Scenario": "Verify Profile functionality",
+        "Test_Cases": [
+            {
+                "Test_Id": "profile#1",
+                "Description": "Verify profile with vaild credentials",
+                "Pre_Condition": "Login Required",
+                "Test_Data": {
+                    "name": "ToryZBax",
+                    "mobile": "9874563210",
+                    "bio": "Hi, there i am a tester!"
+                },
+                "Expected_Output": "User Found",
+                "Test_Type": "positive"
+            },
+            {
+                "Test_Id": "profile#2",
+                "Description": "Verify profile with vaild credentials",
+                "Pre_Condition": "Login Required",
+                "Test_Data": {
+                    "name": "ToryZLax",
+                    "mobile": "983210",
+                    "bio": "Hi, there i am a teaser!"
+                },
+                "Expected_Output": "User Not Found",
+                "Test_Type": "negative"
+            }
+        ]
+    }
+}

@@ -11,7 +11,7 @@
                     "password": "Tory@1234"
                 },
                 "Expected_Output": "Successfull Login",
-                "Expected_Status": "Pass"
+                "Test_Type": "positive"
             },
             {
                 "Test_Id": "login#2",
@@ -22,7 +22,7 @@
                     "password": "admin@12"
                 },
                 "Expected_Output": "Login Failed",
-                "Expected_Status": "Fail"
+                "Test_Type": "negative"
             }
         ]
     }
