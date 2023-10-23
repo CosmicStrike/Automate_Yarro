@@ -1,5 +1,6 @@
 {
-    "Login": {
+    "Test": {
+        "Test_Module": "Login",
         "Test_Scenario": "Verify Login functionality",
         "Test_Cases": [
             {
@@ -7,10 +8,10 @@
                 "Description": "Verify Login with vaild credentials",
                 "Pre_Condition": "No Login Required",
                 "Test_Data": {
-                    "username": "Tory",
-                    "password": "Tory@1234"
+                    "username": "Tester",
+                    "password": "Test@1234"
                 },
-                "Expected_Output": "Successfull Login",
+                "Expected_Outcome": "Successfull Login",
                 "Test_Type": "positive"
             },
             {
@@ -18,10 +19,10 @@
                 "Description": "Verify Login with invaild credentials",
                 "Pre_Condition": "No Login Required",
                 "Test_Data": {
-                    "username": "admin",
-                    "password": "admin@12"
+                    "username": "Developer",
+                    "password": "Deve@1234"
                 },
-                "Expected_Output": "Login Failed",
+                "Expected_Outcome": "Login Failed",
                 "Test_Type": "negative"
             }
         ]

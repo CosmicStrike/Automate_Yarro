@@ -1,18 +1,32 @@
 {
-    "SignUp": {
+    "Test": {
+        "Test_Module": "SignUp",
         "Test_Scenario": "Verify Register functionality",
         "Test_Cases": [
+            {
+                "Test_Id": "register#2",
+                "Description": "Verify register with vaild credentials",
+                "Pre_Condition": "No register Required",
+                "Test_Data": {
+                    "username": "Tester",
+                    "password": "Test@1234",
+                    "repassword": "Test@1234",
+                    "email": "master.skylark7@gmail.com"
+                },
+                "Expected_Outcome": "Registration Fail",
+                "Test_Type": "negative"
+            },
             {
                 "Test_Id": "register#1",
                 "Description": "Verify register with vaild credentials",
                 "Pre_Condition": "No register Required",
                 "Test_Data": {
-                    "username": "Ecom",
-                    "password": "Ecom@1234",
-                    "repassword": "Ecom@1234",
-                    "email": "ecom.app.services@gmail.com"
+                    "username": "Developer",
+                    "password": "Deve@1234",
+                    "repassword": "Deve@1234",
+                    "email": "blast99119@gmail.com"
                 },
-                "Expected_Output": "Successfull Register",
+                "Expected_Outcome": "Successfull Register",
                 "Test_Type": "positive"
             }
         ]

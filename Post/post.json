@@ -1,5 +1,6 @@
 {
-    "Post": {
+    "Test": {
+        "Test_Module": "Post",
         "Test_Scenario": "Verify post functionality",
         "Test_Cases": [
             {
@@ -9,7 +10,7 @@
                 "Test_Data": {
                     "Post_Message": "Test Message"
                 },
-                "Expected_Output": "Successfull Register",
+                "Expected_Outcome": "Successfull Register",
                 "Test_Type": "positive"
             }
         ]

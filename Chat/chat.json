@@ -1,5 +1,6 @@
 {
-    "Chat": {
+    "Test": {
+        "Test_Module": "Chat",
         "Test_Scenario": "Verify Chat functionality",
         "Test_Cases": [
             {
@@ -9,7 +10,7 @@
                 "Test_Data": {
                     "Message": "Hi, Test Message, First"
                 },
-                "Expected_Output": "Message Sent Successfully",
+                "Expected_Outcome": "Message Sent Successfully",
                 "Test_Type": "positive"
             },
             {
@@ -17,9 +18,9 @@
                 "Description": "Verify chat with vaild credentials",
                 "Pre_Condition": "Login Required",
                 "Test_Data": {
-                    "Message": "Second"
+                    "Message": ""
                 },
-                "Expected_Output": "Message not send",
+                "Expected_Outcome": "Message not send",
                 "Test_Type": "negative"
             }
         ]

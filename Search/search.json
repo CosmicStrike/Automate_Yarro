@@ -1,5 +1,6 @@
 {
-    "Search": {
+    "Test": {
+        "Test_Module": "Search",
         "Test_Scenario": "Verify Search functionality",
         "Test_Cases": [
             {
@@ -7,9 +8,9 @@
                 "Description": "Verify search with vaild credentials",
                 "Pre_Condition": "Login Required",
                 "Test_Data": {
-                    "username": "sam"
+                    "username": ""
                 },
-                "Expected_Output": "User Found",
+                "Expected_Outcome": "User Found",
                 "Test_Type": "positive"
             },
             {
@@ -19,8 +20,18 @@
                 "Test_Data": {
                     "username": "?"
                 },
-                "Expected_Output": "User Not Found",
-                "Test_Type": "negative"
+                "Expected_Outcome": "User Not Found",
+                "Test_Type": "positive"
+            },
+            {
+                "Test_Id": "search#3",
+                "Description": "Verify search with vaild credentials",
+                "Pre_Condition": "Login Required",
+                "Test_Data": {
+                    "username": "d"
+                },
+                "Expected_Outcome": "User Found",
+                "Test_Type": "positive"
             }
         ]
     }

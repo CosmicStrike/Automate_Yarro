@@ -1,5 +1,6 @@
 {
-    "Profile": {
+    "Test": {
+        "Test_Module": "Profile",
         "Test_Scenario": "Verify Profile functionality",
         "Test_Cases": [
             {
@@ -11,7 +12,7 @@
                     "mobile": "9874563210",
                     "bio": "Hi, there i am a tester!"
                 },
-                "Expected_Output": "User Found",
+                "Expected_Outcome": "Successful to change profile data",
                 "Test_Type": "positive"
             },
             {
@@ -23,7 +24,7 @@
                     "mobile": "983210",
                     "bio": "Hi, there i am a teaser!"
                 },
-                "Expected_Output": "User Not Found",
+                "Expected_Outcome": "Failed to change profile data",
                 "Test_Type": "negative"
             }
         ]
