@@ -5,8 +5,8 @@
         "Test_Cases": [
             {
                 "Test_Id": "login#1",
-                "Description": "Verify Login with vaild credentials",
-                "Pre_Condition": "No Login Required",
+                "Description": "Verify Login with vaild username and password",
+                "Pre_Condition": "Registration Required",
                 "Test_Data": {
                     "username": "Tester",
                     "password": "Test@1234"
@@ -16,11 +16,33 @@
             },
             {
                 "Test_Id": "login#2",
-                "Description": "Verify Login with invaild credentials",
-                "Pre_Condition": "No Login Required",
+                "Description": "Verify Login with invaild username and password",
+                "Pre_Condition": "No Registration Required",
                 "Test_Data": {
                     "username": "Developer",
                     "password": "Deve@1234"
+                },
+                "Expected_Outcome": "Login Failed",
+                "Test_Type": "negative"
+            },
+            {
+                "Test_Id": "login#3",
+                "Description": "Verify Login with invalid regular expression for username",
+                "Pre_Condition": "No Registration Required",
+                "Test_Data": {
+                    "username": "Tor",
+                    "password": "Deve@1234"
+                },
+                "Expected_Outcome": "Login Failed",
+                "Test_Type": "negative"
+            },
+            {
+                "Test_Id": "login#4",
+                "Description": "Verify Login with invalid regular expression for password",
+                "Pre_Condition": "No Registration Required",
+                "Test_Data": {
+                    "username": "Timer",
+                    "password": "Dev"
                 },
                 "Expected_Outcome": "Login Failed",
                 "Test_Type": "negative"

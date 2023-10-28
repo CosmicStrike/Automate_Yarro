@@ -27,6 +27,7 @@ def Test_Register(driver, waits, waitc, df):
     action = ActionChains(driver)
 
     for i in test_cases:
+        driver.delete_all_cookies()
         driver.get('http://localhost:3000/register')
 
         signup_btn = waits.until(

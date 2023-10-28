@@ -5,13 +5,23 @@
         "Test_Cases": [
             {
                 "Test_Id": "post#1",
-                "Description": "Verify post with vaild credentials",
+                "Description": "Create, Like, Dislike, Delete post",
                 "Pre_Condition": "Login Required",
                 "Test_Data": {
                     "Post_Message": "Test Message"
                 },
-                "Expected_Outcome": "Successfull Register",
+                "Expected_Outcome": "Successful to create like, dislike, delete the post",
                 "Test_Type": "positive"
+            },
+            {
+                "Test_Id": "post#2",
+                "Description": "Create, Like, Dislike, Delete an empty post",
+                "Pre_Condition": "Login Required",
+                "Test_Data": {
+                    "Post_Message": ""
+                },
+                "Expected_Outcome": "Failed to create the postt",
+                "Test_Type": "negative"
             }
         ]
     }

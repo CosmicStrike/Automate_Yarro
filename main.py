@@ -74,6 +74,6 @@ if __name__ == "__main__":
             print(len(df[i]))
         report = pd.DataFrame(df)
         report.to_excel('Report.xlsx')
-
+        driver.quit()
     except (NoSuchElementException, TimeoutException) as err:
         print("Testing Failed")
