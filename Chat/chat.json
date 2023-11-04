@@ -5,7 +5,7 @@
         "Test_Cases": [
             {
                 "Test_Id": "chat#1",
-                "Description": "Verify chat with vaild credentials",
+                "Description": "Verify whether message is send to user",
                 "Pre_Condition": "Login Required",
                 "Test_Data": {
                     "Message": "Hi, Test Message, First"
@@ -15,7 +15,7 @@
             },
             {
                 "Test_Id": "chat#2",
-                "Description": "Verify chat with vaild credentials",
+                "Description": "Verify whether empty message get send to user",
                 "Pre_Condition": "Login Required",
                 "Test_Data": {
                     "Message": ""

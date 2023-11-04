@@ -5,10 +5,10 @@
         "Test_Cases": [
             {
                 "Test_Id": "profile#1",
-                "Description": "Verify profile with vaild credentials",
+                "Description": "Verify whether profile gets updated with vaild credentials",
                 "Pre_Condition": "Login Required",
                 "Test_Data": {
-                    "name": "ToryZBax",
+                    "name": "TesterRocks",
                     "mobile": "9874563210",
                     "bio": "Hi, there i am a tester!"
                 },
@@ -17,14 +17,14 @@
             },
             {
                 "Test_Id": "profile#2",
-                "Description": "Verify profile with vaild credentials",
+                "Description": "Verify whether profile gets updated with invalid mobilenumber",
                 "Pre_Condition": "Login Required",
                 "Test_Data": {
-                    "name": "ToryZLax",
+                    "name": "ToryLacks",
                     "mobile": "983210",
                     "bio": "Hi, there i am a teaser!"
                 },
-                "Expected_Outcome": "Failed to change profile data",
+                "Expected_Outcome": "Failed to update the profile data",
                 "Test_Type": "negative"
             }
         ]

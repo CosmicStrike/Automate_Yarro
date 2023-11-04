@@ -5,17 +5,17 @@
         "Test_Cases": [
             {
                 "Test_Id": "search#1",
-                "Description": "Verify search with vaild credentials",
+                "Description": "Verify whether all users are listed in search",
                 "Pre_Condition": "Login Required",
                 "Test_Data": {
                     "username": ""
                 },
-                "Expected_Outcome": "User Found",
+                "Expected_Outcome": "All users are listed",
                 "Test_Type": "positive"
             },
             {
                 "Test_Id": "search#2",
-                "Description": "Verify search with vaild credentials",
+                "Description": "Verify whether no user is found on giving input",
                 "Pre_Condition": "Login Required",
                 "Test_Data": {
                     "username": "?"
@@ -25,7 +25,7 @@
             },
             {
                 "Test_Id": "search#3",
-                "Description": "Verify search with vaild credentials",
+                "Description": "Verify search for all users having 'd' in their usernames",
                 "Pre_Condition": "Login Required",
                 "Test_Data": {
                     "username": "d"

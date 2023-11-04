@@ -25,8 +25,8 @@ def Test_Login(driver, waits, waitc, df):
     action = ActionChains(driver)
 
     for i in test_cases:
-        driver.get('http://localhost:3000/')
         driver.delete_all_cookies()
+        driver.get('http://localhost:3000/')
 
         login_btn = waits.until(
             EC.presence_of_element_located((By.XPATH, xlogin_btn)))
@@ -78,6 +78,8 @@ def Test_Login(driver, waits, waitc, df):
             else:
                 df["Status"].append("Fail")
                 print("Test Fail")
+        driver.delete_all_cookies()
+
     print("Login : ", df)
     return df
 

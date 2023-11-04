@@ -1,12 +1,12 @@
 {
     "Test": {
         "Test_Module": "SignUp",
-        "Test_Scenario": "Verify Register functionality",
+        "Test_Scenario": "Verify SignUp functionality",
         "Test_Cases": [
             {
-                "Test_Id": "register#2",
-                "Description": "Verify register with vaild credentials",
-                "Pre_Condition": "No register Required",
+                "Test_Id": "signup#1",
+                "Description": "Verify registeration with alreay registered account",
+                "Pre_Condition": "Tester account must be registered",
                 "Test_Data": {
                     "username": "Tester",
                     "password": "Test@1234",
@@ -17,8 +17,8 @@
                 "Test_Type": "negative"
             },
             {
-                "Test_Id": "register#1",
-                "Description": "Verify register with vaild credentials",
+                "Test_Id": "signup#2",
+                "Description": "Verify register of new account with vaild credentials",
                 "Pre_Condition": "No register Required",
                 "Test_Data": {
                     "username": "Developer",
@@ -28,6 +28,45 @@
                 },
                 "Expected_Outcome": "Successfull Register",
                 "Test_Type": "positive"
+            },
+            {
+                "Test_Id": "signup#3",
+                "Description": "Verify registration of new account with invalid email",
+                "Pre_Condition": "No register Required",
+                "Test_Data": {
+                    "username": "Toy12",
+                    "password": "Deve@1234",
+                    "repassword": "Deve@1234",
+                    "email": "invaild@d"
+                },
+                "Expected_Outcome": "Registration Failed",
+                "Test_Type": "negative"
+            },
+            {
+                "Test_Id": "signup#4",
+                "Description": "Verify registration of new account with invalid username",
+                "Pre_Condition": "No register Required",
+                "Test_Data": {
+                    "username": "GET",
+                    "password": "Deve@1234",
+                    "repassword": "Deve@1234",
+                    "email": "shubhamchougule2020.comp@mmcoe.edu.in"
+                },
+                "Expected_Outcome": "Registration Failed",
+                "Test_Type": "negative"
+            },
+            {
+                "Test_Id": "signup#5",
+                "Description": "Verify registration of new account with invalid password",
+                "Pre_Condition": "No register Required",
+                "Test_Data": {
+                    "username": "Toy1234",
+                    "password": "Dev",
+                    "repassword": "Dev",
+                    "email": "shubhamchougule2020.comp@mmcoe.edu.in"
+                },
+                "Expected_Outcome": "Registration Failed",
+                "Test_Type": "negative"
             }
         ]
     }
